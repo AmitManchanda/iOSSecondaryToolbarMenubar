@@ -6,7 +6,8 @@ namespace iOSSecondaryToolbarMenubar.ViewModels
 	public class MainPageViewModel
 	{
 		public ICommand Item1Command { get; internal set; }
-
+		
+		//Constructor
 		public MainPageViewModel()
 		{
 			Item1Command = new Command(() => Item1Method());
