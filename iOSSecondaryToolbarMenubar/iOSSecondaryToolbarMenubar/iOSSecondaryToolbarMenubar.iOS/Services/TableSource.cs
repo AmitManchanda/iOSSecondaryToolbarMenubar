@@ -34,6 +34,8 @@ namespace iOSSecondaryToolbarMenubar.iOS.Services
 			if (cell == null)
 			{ cell = new UITableViewCell(UITableViewCellStyle.Default, CellIdentifier); }
 			cell.TextLabel.Text = item;
+			cell.UserInteractionEnabled = _tableItems[indexPath.Row].IsEnabled;
+			cell.TextLabel.Enabled = cell.UserInteractionEnabled;
 			return cell;
 		}
 
